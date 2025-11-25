@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IT Portfolio - Shraddha</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <aside class="sidebar">
+      <span id="themeBtn" class="theme-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 1472 1536">
+          <path fill="currentColor"
+            d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72z" />
+        </svg>
+      </span>
       <img src="img.jpeg" alt="photo" class="profile-pic">
       <nav>
         <ul>
@@ -24,7 +32,6 @@
       <header>
         <h1>Shraddha Adhikari</h1>
         <h4>IT Student | Web Developer</h4>
-    
       </header>
 
       <section id="about">
@@ -32,7 +39,7 @@
         <p>I’m an IT student passionate about web development, problem-solving, and building dynamic websites.</p>
       </section>
 
-      <section id="skills">
+      <!-- <section id="skills">
         <h2>Skills</h2>
         <ul>
           <li>HTML, CSS, JavaScript</li>
@@ -40,49 +47,116 @@
           <li>Advanced Calculus</li>
           <li>Creative Communication</li>
         </ul>
+      </section> -->
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+          <span>HTML, CSS, JavaScript</span>
+          <div class="progress-bar" data-progress="85"></div>
+        </div>
+        <div class="skill">
+          <span>Database Normalization</span>
+          <div class="progress-bar" data-progress="75"></div>
+        </div>
+        <div class="skill">
+          <span>Calculus</span>
+          <div class="progress-bar" data-progress="60"></div>
+        </div>
+        <div class="skill">
+          <span>Creative Communication</span>
+          <div class="progress-bar" data-progress="50"></div>
+        </div>
       </section>
+
 
       <section id="projects">
         <h2>Projects</h2>
-        <div class="project-card">
-          <h3>Weather Application</h3>
-          <p>A web-based application that provides real-time weather updates, forecasts, and location-based climate insights. Built with HTML, CSS, and JavaScript, it integrates with weather APIs to deliver accurate data in a clean, responsive interface. Users can search for cities worldwide, view temperature, humidity, and conditions, and enjoy a visually engaging design with dynamic icons.</p>
-        </div>
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A responsive personal portfolio built with HTML, CSS, and JavaScript. It showcases my academic background, technical skills, and creative projects in a clean, modern layout. The site features smooth navigation, interactive elements, and a mobile-friendly design to ensure accessibility across devices. This project demonstrates my ability to combine design aesthetics with functional web development, creating a professional space to present my work and connect with others.</p>
-        </div>
-        <div class="project-card">
-          <h3>Pet Care Tracker</h3>
-          <p>A web application designed to help pet owners monitor and manage their pets’ health routines. Built with HTML, CSS, and JavaScript, it allows users to log veterinary visits, track vaccinations, record home remedies, and set reminders for daily care tasks. The project emphasizes user-friendly design and practical functionality, making it easier to ensure pets receive consistent and attentive care.</p>
-        </div>
-        <div class="project-card">
-          <h3>Period Tracker</h3>
-          <p>A user-friendly web app designed to help individuals monitor their menstrual cycles, predict upcoming periods, and log symptoms. Built with HTML, CSS, and JavaScript, it features a clean interface and customizable reminders to support health awareness and routine tracking.</p>
-        </div>
-        <div class="project-card">
-          <h3>Stopwatch</h3>
-          <p>A simple yet functional web application that allows users to start, pause, reset, and record lap times with precision. Built using HTML, CSS, and JavaScript, it features a clean interface, responsive design, and smooth time-tracking functionality. This project demonstrates my ability to implement real-time logic, event handling, and user-friendly controls in a practical application.</p>
-        </div>
-        <div class="project-card">
-          <h3>Online Food Ordering</h3>
-          <p>A responsive web application that enables users to browse menus, customize orders, and place food requests online with ease. Built using HTML, CSS, and JavaScript, it features a clean interface, intuitive navigation, and dynamic cart functionality. The project highlights my skills in front-end development, interactive UI design, and creating practical solutions that enhance everyday convenience.</p>
+        <div class="projects-grid">
+
+          <div class="project-card" data-link="https://shraddha107.github.io/MyWeatherApp/">
+            <h3>Weather Application</h3>
+            <p>A web-based application that provides real-time weather updates, forecasts, and location-based climate
+              insights. Built with HTML, CSS, and JavaScript, it integrates with weather APIs to deliver accurate data
+              in
+              a clean, responsive interface. Users can search for cities worldwide, view temperature, humidity, and
+              conditions, and enjoy a visually engaging design with dynamic icons.</p>
+          </div>
+          <div class="project-card" data-link="https://shraddha107.github.io/Login-Page/">
+            <h3>Modern Login page</h3>
+            <p>A visually appealing and responsive login interface designed with clean layouts, gradients, and hover
+              effects. This project focuses on modern UI styling and user‑friendly design, making it a great example of
+              creative front‑end work.</p>
+          </div>
+          <div class="project-card" data-link="https://shraddha107.github.io/Period-Tracker/">
+            <h3>Period Tracker</h3>
+            <p>A user-friendly web app designed to help individuals monitor their menstrual cycles, predict upcoming
+              periods, and log symptoms. Built with HTML, CSS, and JavaScript, it features a clean interface and
+              customizable reminders to support health awareness and routine tracking.</p>
+          </div>
+          <div class="project-card" data-link="https://shraddha107.github.io/stopwatchApp/">
+            <h3>Stopwatch</h3>
+            <p>A simple yet functional web application that allows users to start, pause, reset, and record lap times
+              with
+              precision. Built using HTML, CSS, and JavaScript, it features a clean interface, responsive design, and
+              smooth time-tracking functionality. This project demonstrates my ability to implement real-time logic,
+              event
+              handling, and user-friendly controls in a practical application.</p>
+          </div>
+          <div class="project-card" data-link="https://shraddha107.github.io/Online-Food-Ordering/">
+            <h3>Online Food Ordering</h3>
+            <p>A simple, responsive design that presents an online food ordering interface with clean layouts and
+              intuitive navigation. Built using HTML, CSS, and JavaScript, this project highlights modern front‑end
+              styling and user‑friendly UI design without backend functionality.</p>
+          </div>
+          <div class="project-card">
+            <h3>Audio Demo</h3>
+            <audio controls>
+              <source src="OVERSLEPT.mpeg" type="audio/mpeg">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+          <div class="project-card">
+            <h3>video Demo</h3>
+            <video controls width="360" height="200" poster="videoCover.jpeg">
+              <source src="CortisEdit.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div id="slider" class="project-card">
+            <h3>Image Slider</h3>
+            <div class="slider-container">
+              <div class="slide active"><img src="cortis.jpg" alt="Image 1"></div>
+              <div class="slide"><img src="martin.jpg" alt="Image 2"></div>
+              <div class="slide"><img src="james.jpg" alt="Image 3"></div>
+              <div class="slide"><img src="juhoon.jpg" alt="Image 4"></div>
+              <div class="slide"><img src="seonghyeon.jpg" alt="Image 5"></div>
+              <div class="slide"><img src="keonho.jpg" alt="Image 6"></div>
+            </div>
+            <button id="prevBtn">⬅</button>
+            <button id="nextBtn">➡</button>
+          </div>
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form id="contactForm">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit">Send</button>
         </form>
+
         <p id="formMessage"></p>
+        <div id="formDetails" class="project-card" style="display:none;"></div>
+
+        <span class="goUp-btn" id="goUpBtn">⬆</span>
       </section>
     </main>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

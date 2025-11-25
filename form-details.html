@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="content">
+        <h2>Form Submission Details</h2>
+        <div id="formDataDisplay" class="project-card"></div>
+        <button onclick="window.location.href='index.html'" class="submit">Back to Form</button>
+    </main>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme");
+            const body = document.body;
+
+            if (savedTheme === "light") {
+                body.classList.add("light-mode");
+            } else if (savedTheme === "dark") {
+                body.classList.add("dark-mode");
+            }
+        });
+
+
+        const name = localStorage.getItem("contactName");
+        const email = localStorage.getItem("contactEmail");
+        const message = localStorage.getItem("contactMessage");
+        const display = document.getElementById("formDataDisplay");
+
+        if (name && email && message) {
+            display.innerHTML = `
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Message:</strong> ${message}</p>
+            <p class="success">✔ Form submitted successfully!</p>
+            `;
+        } else {
+            display.innerHTML = `<p class="error">No form data found. Please submit the form first.</p>`;
+        }
+
+        localStorage.removeItem("contactName");
+        localStorage.removeItem("contactEmail");
+        localStorage.removeItem("contactMessage");
+    </script>
+
+</body>
+
+</html>
