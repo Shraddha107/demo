@@ -357,6 +357,39 @@ body.dark-mode .error {
   color: #ac2222;
 }
 
+.site-footer {
+  background-color: #161f2d;
+  color: #94a3b8;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+body.light-mode .site-footer {
+  background-color: #50617b;
+  color: #f9fafb;
+}
+
+.footer-content {
+  display: flex;
+  margin-left: 5%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #f9fafb;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #94a3b8;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
